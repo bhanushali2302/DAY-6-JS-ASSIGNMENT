@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> printing multiplication table </title>
+    </head>
+     <body>
+        <input type="text" id="txtNumber"/>
+        <button onclick="printTableofNumber">Print Table</button>
+        <script>
+        function printTableofNumber()
+        {
+        var pOut= document.getElementById('pOutElement');
+        
+        var num=Number(document.getElementById('txtNumber').value);
+        for(var i=1; i<=10; i++){
+        pOut.innerHTML += (num*i) + "<br/>"
+        }
+        }
+    </script>
+    </body>
+    </html>       
